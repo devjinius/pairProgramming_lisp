@@ -1,0 +1,5 @@
+(defun hello()
+    (print (read))
+)
+(setq *print-case* :downcase)
+(hello)
