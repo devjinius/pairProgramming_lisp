@@ -1,5 +1,5 @@
 (defun inputUserName() 
-    (format t "~a" (read-line))
+    (format t "hello ~a" (read-line))
 )
 
 (inputUserName)
