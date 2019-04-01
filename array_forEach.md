@@ -1,39 +1,42 @@
 # forEach
 
 ## 정의
+
 forEach() 메서드는 주어진 함수를 배열 요소 각각에 대해 실행합니다.
 
 ## 함수설명
-`
-arr.forEach(callback[, thisArg]);
-`
+
+함수를 사용하는 방법은 아래와 같습니다.
+
+`arr.forEach(callback[, thisArg]);`
+
 - callback
-    - currentValue
-    - index 
-    - Array : forEach()를 호출한 배열.
+  - currentValue
+  - index(optional)
+  - array(optional) : forEach()를 호출한 배열(arr)
+- thisArg(optional) : callback을 실행할 때 this로 사용할 값입니다.
 
-- thisArg : callback을 실행할 때 this로 사용할 값.
+## 예시
 
-## 간단예시
+아래 코드는 간단하게 배열을 출력하는 예시입니다.
+1번 코드는 기존의 for-loop 방식이며, 2번 코드는 forEach를 사용한 방식입니다.
+
 ```js
 const items = ['item1', 'item2', 'item3'];
-const copy = [];
 
-// 이전
-for (let i=0; i<items.length; i++) {
-  copy.push(items[i]);
+// 1번 코드
+for (let i = 0; i < items.length; i++) {
+  console.log(items[i]);
 }
 
-// 이후
-items.forEach(function(item){
-  copy.push(item);
+// 2번 코드
+items.forEach(function(item) {
+    if (item === 'item1') {break;}
+  console.log(item);
 });
 ```
 
 ## 장단점
-
-
-
 
 ### 장점
 
