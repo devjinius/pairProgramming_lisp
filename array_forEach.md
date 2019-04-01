@@ -31,7 +31,6 @@ for (let i = 0; i < items.length; i++) {
 
 // 2번 코드
 items.forEach(function(item) {
-    if (item === 'item1') {break;}
   console.log(item);
 });
 ```
@@ -79,8 +78,9 @@ for (let item of arr) {
 단순히 배열을 순회하기 위한 목적이라면 for...of 구문을 사용하는 것이 속도 측면에서 유리합니다. 다만, 배열을 순회하면서 배열의 인덱스가 필요한 경우에는 for...of 구문을 사용할 수 없습니다. 이 때에는 forEach 메소드를 사용하면 됩니다.
 
 ## 결론
+foreach문은 for문에 비해서 더 직관적으로 코드를 작성할 수 있어 좋지만 중간에 break키워드를 사용할 수 없다는 단점이 있다. 
 
 ## 참고자료
 
-- [test](https://naver.com)
+- [MDN-foreach문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 - [helloworldjavascript-array](https://helloworldjavascript.net/pages/190-array.html)
